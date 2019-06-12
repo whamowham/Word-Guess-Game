@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Band Guess Game</title>
+  </head>
+  <body>
+
+    <h1>Band Guess Game</h1>
+
+    <script>
+
+// when a user pulls up the window and puts in a letter, console logs it. event listener takes any input. 
+window.addEventListener("keydown", startGame);
+
+// e is the event.  user presses a key and the game starts. 
+
+function startGame (e) {
+    console.log (e)
+}
+
+// make an array of the bands
+
+var bands = ["Beatles", "Arcade Fire", "Queen"];
+
+// pick a band name and assign it to the answer variable 
+
+var answer = bands[0]
+var answerSplit = bands[0].split('');
+console.log (answer + " " + answerSplit); 
+
+// check to see which letter the user used
+
+// make an array of the letter choices 
+
+var letters = []
+
+// user is right, marks letter down
+
+// user is wrong, takes away a point and does not mark letter down 
+
+// letters amass at the bottom 
+
+// user presses same key multiple times, nothing happens
+
+// user guesses final letter, the band name pops up
+
+// users guess final letter, and it resets to a new game
+
+// user guesses final letter, picture pops up 
+
+// loop that checks how many guesses you have left, if you have 0 it goes to a new band. if you guessed all letters, picture and name pop up.
+
+</script>
+
+<style>
+
+</style>
+
+</body>
+</html>
